@@ -7,57 +7,6 @@
 /* ── Reset & Base ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-.logo{
-    font-size: 19px;
-    color: yellow;
-    text-transform: capitalize;
-}
-#searchBtn{
-  height: 30px;
-  width: 100px;
-  margin-left: 10px;
-}
-
-
- #cityInput {
-
-  height: 30px;
-  width: 120px;
-margin-right: 30px;
-}
-
-#tempMain{
-  color: rgb(210, 84, 16);
-}
-#feelsLike{
-  color: rgb(207, 150, 18);
-}
-#htc{
-  color: yellow;
-}
-#df{
-  color: yellow;
-}
-#cityName{
-  color: chocolate;
-}
-#countryBadge{
-  color: rgb(0, 125, 163);
-}
-#humidity{
-  color: rgb(255, 255, 255);
-
-}
-#windSpeed{
-  color: #ffffff;
-}
-#visibility{
-  color: #ffffff;
-}
-.V{
-  color: rgb(195, 25, 210);
-  font-weight: bold;
-}
 :root {
   --bg:          #080F1C;
   --surface:     #0F1A2E;
@@ -142,7 +91,6 @@ h1, h2, h3, .logo-text { font-family: 'Space Grotesk', sans-serif; }
 .search-box {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
   background: var(--card);
   border: 1px solid var(--border);
@@ -194,12 +142,6 @@ h1, h2, h3, .logo-text { font-family: 'Space Grotesk', sans-serif; }
 .search-btn:active { transform: translateY(0); }
 .search-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
 .btn-arrow { width: 16px; height: 16px; }
-#errorBanner{
-    background-color: red;
-    color: white;
-    padding: 10px;
-    margin: 10px 0;
-}
 
 /* ─────────────────────────────────────────
    MAIN
