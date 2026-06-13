@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyView Weather Dashboard</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="app-header">
+    <div class="logo">Weather Data</div>
+<div class="search-wrapper">
+    <input
+        type="text"
+        id="cityInput"
+        placeholder="Search city..."
+    >
+    <button id="searchBtn">Search</button>
+</div>
+</header>
+<main class="main-content">
+<!-- Loading -->
+<div id="loadingOverlay" hidden>
+    Loading...
+</div>
+<!-- Error -->
+<div id="errorBanner" hidden>
+    <span id="errorMessage"></span>
+    <button id="errorClose">✖</button>
+</div>
+<!-- Empty State -->
+<div id="emptyState">
+    Search for a city to view weather details.
+</div>
+<!-- Weather Content -->
+<div id="weatherContent" hidden>
+    <!-- Current Weather -->
+    <section class="current-weather">
+        <div class="weather-left">
+            <h2 id="cityName">City</h2>
+            <span id="countryBadge">IN</span>
+            <p id="conditionLabel">
+                Weather Condition
+            </p>
+            <p>
+                Feels Like:
+                <span id="feelsLike">0</span>°C
+            </p>
+        </div>
+        <div class="weather-right">
+            <div id="weatherIconLarge">☀️</div>
+            <h1>
+                <span id="tempMain">0</span>°C
+            </h1>
+        </div>
+    </section><br><br>
+    <!-- Extra Info -->
+    <section class="weather-stats">
+        <div class="V">
+            Humidity:
+            <span id="humidity">0%</span>
+        </div><br>
+        <div class="V">
+            Wind:
+            <span id="windSpeed">0 km/h</span>
+        </div><br>
+        <div class="V">
+            Visibility:
+            <span id="visibility">0 km</span>
+        </div><br>
+    </section>
+    <!-- Forecast -->
+    <section class="dfc">
+        <h2 id="df">5-Day Forecast</h2><br>
+        <div id="forecastStrip"></div>
+    </section><br>
+    <!-- Chart -->
+    <section>
+        <h2 id="htc">Hourly Temperature Chart</h2> <br>
+        <div style="height:350px;">
+            <canvas id="hourlyChart"></canvas>
+        </div>
+    </section>
+</div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
+</body>
+</html>
