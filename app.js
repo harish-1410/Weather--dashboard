@@ -390,7 +390,7 @@ searchBtn.addEventListener("click", () => {
 
 // Enter key in input
 cityInput.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") searchWeather(cityInput.value);
+  if (e.key === "Enter") {searchWeather(cityInput.value);}
 });
 
 // Dismiss error banner
