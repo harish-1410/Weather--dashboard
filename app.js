@@ -1,4 +1,3 @@
-
 "use strict";
 
 // ─────────────────────────────────────────────
@@ -94,7 +93,7 @@ function getForecastLabel(dateStr) {
 }
 
 /** Round a number to one decimal place */
-function round1 = (n) {return Math.round(n * 10) / 10;}
+const round1 = (n) => Math.round(n * 10) / 10;
 
 // ─────────────────────────────────────────────
 // UI STATE HELPERS
@@ -367,7 +366,7 @@ async function searchWeather(cityName) {
     showWeatherContent();
     localStorage.setItem("skyview_last_city", locationData.name);
   } catch (err) {
-    console.error(err);
+    console.error("[SkyView] Error:", err);
 
     if (err.message === "CITY_NOT_FOUND") {
       showError("City not found. Please try again.");
@@ -385,12 +384,12 @@ async function searchWeather(cityName) {
 
 // Search button click
 searchBtn.addEventListener("click", () => {
-  searchWeather(cityInput.value.trim());
+  searchWeather(cityInput.value);
 });
 
 // Enter key in input
 cityInput.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {searchWeather(cityInput.value.trim());}                          
+  if (e.key === "Enter") searchWeather(cityInput.value);
 });
 
 // Dismiss error banner
