@@ -274,7 +274,7 @@ h1, h2, h3, .logo-text { font-family: 'Space Grotesk', sans-serif; }
 /* ─────────────────────────────────────────
    WEATHER CONTENT
 ───────────────────────────────────────── */
-.weather-content[hidden] { display: none !important; }
+.weather-content[hidden] { display: none; }
 
 .weather-content {
   display: flex;
