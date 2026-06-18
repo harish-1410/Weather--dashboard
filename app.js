@@ -385,7 +385,7 @@ async function searchWeather(cityName) {
 
 // Search button click
 searchBtn.addEventListener("click", () => {
-  searchWeather(cityInput.value);
+  searchWeather(cityInput.value.trim());
 });
 
 // Enter key in input
