@@ -10,6 +10,8 @@ tempMain{
    margin:50px;}
 #humidity{
    margin-top: 10px;}
+.weather-stats{
+   margin:30px;}
 :root {
   --bg:          #080F1C;
   --surface:     #0F1A2E;
