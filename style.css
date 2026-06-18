@@ -274,7 +274,7 @@ h1, h2, h3, .logo-text { font-family: 'Space Grotesk', sans-serif; }
 /* ─────────────────────────────────────────
    WEATHER CONTENT
 ───────────────────────────────────────── */
-.weather-content[hidden] { display: none; }
+.weather-content[hidden] { display: none !important; }
 
 .weather-content {
   display: flex;
@@ -662,7 +662,7 @@ h1, h2, h3, .logo-text { font-family: 'Space Grotesk', sans-serif; }
   .forecast-day  { font-size: 0.68rem; }
 
   .chart-card { padding: 20px 14px; }
-  #hourlyChart { height: 200px; }
+  #hourlyChart { height: 200px !important; }
 }
 
 /* ─────────────────────────────────────────
