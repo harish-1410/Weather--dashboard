@@ -1,5 +1,4 @@
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,33 +8,23 @@
 </head>
 <body>
 <header class="app-header">
-    <div class="logo">Weather Data</div>
+    <div class="logo">SkyView</div>
 <div class="search-wrapper">
     <input
         type="text"
         id="cityInput"
         placeholder="Search city..."
-        aria-label="Enter city name"
     >
-    <button id="searchBtn"
-      type="button"
-      arial-label="Search weather"
-      >Search</button>
+    <button id="searchBtn">Search</button>
 </div>
 </header>
 <main class="main-content">
 <!-- Loading -->
-<div id="loadingOverlay" 
-  aria-live="polite"
-  aria-label="Loading weather data"
-  hidden>
+<div id="loadingOverlay" hidden>
     Loading...
 </div>
 <!-- Error -->
-<div id="errorBanner"
-  role="alert"
-  aria-live="assertive"
-   hidden>
+<div id="errorBanner" hidden>
     <span id="errorMessage"></span>
     <button id="errorClose">✖</button>
 </div>
@@ -55,41 +44,40 @@
             </p>
             <p>
                 Feels Like:
-                <span id="feelsLike">0</span><span class"temp-unit">°</span>
+                <span id="feelsLike">0</span>°C
             </p>
         </div>
         <div class="weather-right">
             <div id="weatherIconLarge">☀️</div>
             <h1>
-                <span id="tempMain">0</span><span class="temp unit>°</span>
+                <span id="tempMain">0</span>°C
             </h1>
         </div>
-    </section><br><br>
+    </section>
     <!-- Extra Info -->
     <section class="weather-stats">
-        <div class="V">
+        <div>
             Humidity:
             <span id="humidity">0%</span>
-        </div><br>
-        <div class="V">
+        </div>
+        <div>
             Wind:
             <span id="windSpeed">0 km/h</span>
-        </div><br>
-        <div class="V">
+        </div>
+        <div>
             Visibility:
             <span id="visibility">0 km</span>
-        </div><br>
+        </div>
     </section>
     <!-- Forecast -->
-    <section class="dfc">
-        <h2 id="df">5-Day Forecast</h2><br>
-        <div id="forecastStrip"
-          aria-label="5 day weather forecast"></div>
-    </section><br>
+    <section>
+        <h2>5-Day Forecast</h2>
+        <div id="forecastStrip"></div>
+    </section>
     <!-- Chart -->
     <section>
-        <h2 id="htc">Hourly Temperature Chart</h2> <br>
-        <div class="chart-container">
+        <h2>Hourly Temperature Chart</h2>
+        <div style="height:350px;">
             <canvas id="hourlyChart"></canvas>
         </div>
     </section>
@@ -97,7 +85,5 @@
 </main>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="./app.js"></script>
-</body>
-</html>
 </body>
 </html>
