@@ -367,7 +367,7 @@ async function searchWeather(cityName) {
     showWeatherContent();
     localStorage.setItem("skyview_last_city", locationData.name);
   } catch (err) {
-    console.error("[SkyView] Error:", err);
+    console.error(err);
 
     if (err.message === "CITY_NOT_FOUND") {
       showError("City not found. Please try again.");
