@@ -94,7 +94,7 @@ function getForecastLabel(dateStr) {
 }
 
 /** Round a number to one decimal place */
-const round1 = (n) => Math.round(n * 10) / 10;
+function round1 = (n) {return Math.round(n * 10) / 10;}
 
 // ─────────────────────────────────────────────
 // UI STATE HELPERS
