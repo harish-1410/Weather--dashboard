@@ -6,7 +6,8 @@
 
 /* ── Reset & Base ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+#tempMain{
+   margin: 10px;}
 :root {
   --bg:          #080F1C;
   --surface:     #0F1A2E;
