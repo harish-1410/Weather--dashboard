@@ -15,8 +15,12 @@
         type="text"
         id="cityInput"
         placeholder="Search city..."
+        aria-label="Enter city name"
     >
-    <button id="searchBtn">Search</button>
+    <button id="searchBtn"
+      type="button"
+      arial-label="Search weather"
+      >Search</button>
 </div>
 </header>
 <main class="main-content">
@@ -25,7 +29,10 @@
     Loading...
 </div>
 <!-- Error -->
-<div id="errorBanner" hidden>
+<div id="errorBanner"
+  role="alert"
+  aria-live="assertive"
+   hidden>
     <span id="errorMessage"></span>
     <button id="errorClose">✖</button>
 </div>
